@@ -1,11 +1,18 @@
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/kina.jpg';
 
 export default function Header() {
   return (
-    <header style={{ padding: '0.5vh', border:'2px solid rgb(188, 188, 188)', backgroundColor: 'white'}}>
-      <p style={{color: 'black', margin: '2vh', fontFamily: '"Playfair Display", serif'}}>RUI HIGASHI</p>
-      <nav style={{ display: 'flex', justifyContent: 'center',marginBottom: '15vh'}}>
-        <h1 style={{ fontFamily: '"Playfair Display", serif', fontSize: '15vh'}}>Portfolio</h1>
+    
+    <div style={{ background: '#f0f0f0',  backgroundColor: 'white'}}>
+      <nav style={{ display: 'flex', gap: '7vw', justifyContent: 'left', marginLeft:'2vw'}}>
+      <img src={logo} className='headerLogo' alt='logo' />
+      <p style={{color: 'black', fontFamily: '"Playfair Display", serif'}}>RUI</p>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
-    </header>
+    </div>
   );
 }
