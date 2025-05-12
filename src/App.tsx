@@ -1,17 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
 import Home from './pages/Home.tsx'
 import About from './pages/About.tsx'
 import Projects from './pages/Projects.tsx'
 import Contact from './pages/Contact.tsx'
-import Distination from './components/Destination.tsx';
+import Distination from './components/Destination.tsx'
 import Introduction from './components/Introduction.tsx'
+import BackgroundAnimmetion from './components/BackgroundAnimmetion.tsx'
 import './App.css'
+
 
 function App() {
   return (
     <Router>
+      <BackgroundAnimmetion />  
       <Header />
       <Distination />
       <Introduction />
